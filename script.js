@@ -14,7 +14,11 @@ let time = hours + ":" + currentDate.getMinutes();
   theNewDiv.classList.add("auto-div");
   timeDiv.classList.add("right");
   //set the text inside the div
+  //let icon = document.createTextNode("(´･ᴗ･ ` )");
+  let icon = document.createElement("div");
+  icon.classList.add("icon");
   theNewDiv.innerHTML = document.getElementById("textInput").value;
+  theNewDiv.appendChild(icon);
   timeDiv.innerHTML = time;
 
   //find the right tag to add the div to
